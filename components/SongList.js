@@ -16,7 +16,7 @@ const SongList = () => {
     setSongs([...songs, { title: title, id: uuid() }])
   }
 
-  // similar to componentDidMount() for functional components. To make updates less expensive, pass a callback function to specify the part state useEffect should watch for rerenders
+  // similar to componentDidMount() for functional components. To make updates less expensive, pass a callback function to specify the part of state useEffect should watch for rerenders
   useEffect(() => {
     console.log('useEffect hook ran', songs)
   }, [songs])
